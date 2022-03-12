@@ -13,6 +13,7 @@ class Manager extends Employee {
         super(Employee) 
         this.manage = manage;
         this.admin = admin;
+        this.Manager = Manager;
     }
 }
 
