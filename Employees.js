@@ -6,13 +6,30 @@ class Employee {
      this.StoreNumber = storeNumber;
      this.employee = Employee;
     }
-    permissionsList = () => {
-        //find way to add permissions without code ref
+    getBook () {
+       this.author = author;
+       this.title = title,
+       this.genre = genre,
+       this.year = year,
+       this.isbn = isbn;
+       let book = {author} + {title} + {genre} + {year} + {isbn};
+       return book;
+    };
+    getCredentials () {
+        this.telephoneNumber = telephone;
+        this.employeeEmail = email;
+        this.employeePassword = password;
+        let credentials = {this:telephone} + {this:email} + {this:password};
+        return credentials;
+    }
+    getPermissions () {
+        return this.getCredentials + this.getBook
     }
 };
 
+
 //console.log(Employee);
-const storeEmployee1 = new Employee('John', 'Doe', '01206856', '01001');
+const storeEmployee1 = new Employee('John', 'Doe', '01206856', '01001').addBook;
 const storeEmployee2= new Employee('Jane', 'Doe', '01216856', '01001');
 console.log(storeEmployee1);
 console.log(storeEmployee2);
@@ -32,7 +49,10 @@ console.log(storeManager);
 
 const countries = ['Finland', 'Estonia', 'Sweden', 'Denmark', 'Norway'];
 const [Finland, Estonia, Sweden, Denmark, Norway] = countries;
-const Regions = countries.map((fin, est, sw, den, nor) => {fin, est, sw, den, nor});
-
+const Regions = countries.map((countries) => {return 'fin', 'est', 'sw', 'den', 'nor'});    //Something wrong: Only returning new array with nor (Debugging)
 console.log(countries);
 console.log(Regions);
+
+const rectangle = {
+    width: 20,
+}
