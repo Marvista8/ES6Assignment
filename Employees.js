@@ -100,15 +100,25 @@ const oddNums = [1, 3, 5, 7, 9];
 // const [1, 3, 5, 7, 9] = oddsList;
 console.log(oddNums);
 
-const newNums = [...evenNums, 1, 3, 5, 7, 9];
-console.log(newNums);
+numbersArray = () => {
+    const newNums = [...evenNums, 1, 3, 5, 7, 9];
+    console.log(newNums);
 
-function addArray() {
+    return document.getElementById('demo').innerHTML += newNums;
+}
+
+numbersArray();
+
+// const newNums = [...evenNums, 1, 3, 5, 7, 9];
+// console.log(newNums);
+
+// document.getElementById('demo').innerHTML += newNums;
+
+ addArray = () => {
     let newNumbers = oddNums + evenNums;
     console.log(newNumbers);
     return newNumbers;
 }
-
 addArray().allTheNumbers;
 
 
