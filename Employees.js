@@ -92,13 +92,10 @@ function myRectangle({width, height, area, perimeter}) {
 }
 
 
-// const evens = [0, 2, 4, 6, 8, 10];
-// const [0, 2, 4. 6, 8, 10] = evens;
-// console.log(evens);
+const evensList = [0, 2, 4, 6, 8, 10];
+const [0, 2, 4, 6, 8, 10] = evensList;           //Not letting me destructure without an error for both
+
+const oddsList = [1, 3, 5, 7, 9];
+const [1, 3, 5, 7, 9] = oddsList;
 
 
-//constant typescript errors stating it's not a destructuring pattern won't recognize desctructure pattern
-
-// const odds = [1, 3, 5, 7, 9, 11];
-// const [1, 3, 5, 7, 9, 11] = odds;
-//don't know what I am doing wrong won't let me desctructure properly without 
