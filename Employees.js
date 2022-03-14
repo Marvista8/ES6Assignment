@@ -34,11 +34,27 @@ const storeEmployee2= new Employee('Jane', 'Doe', '01216856', '01001');
 console.log(storeEmployee1);
 console.log(storeEmployee2);
 
-
 class Manager extends Employee {
     constructor(fName, lName, idNumber, storeNumber, admin) {
         super(fName, lName, idNumber, storeNumber) 
-        this.managerAbilities = admin;
+        this.abilities = admin;
+        this.manager = Manager;
+    }
+    delete () {
+        return this.delete;
+    }
+    acceptProfile () {
+        this.acceptProfile = accept;
+        this.employeePassword = password;
+        this.employeeEmail = email;
+        this.telephoneNumber = telephone;
+        return new this.acceptProfile;
+    }
+    reset () {
+        this.employeePassword = passwordReset;
+        this.employeeEmail = emailReset;
+        let newPassword = passwordReset + emailReset;
+        return newPassword;
     }
 }
 
@@ -49,10 +65,16 @@ console.log(storeManager);
 
 const countries = ['Finland', 'Estonia', 'Sweden', 'Denmark', 'Norway'];
 const [Finland, Estonia, Sweden, Denmark, Norway] = countries; 
-const Regions = countries.map((fin) => {return fin});
-console.log(Regions)
-//Something wrong: Only returning new array with nor (Debugging)
-// console.log(countries);
+console.log(countries)
+const Regions = countries.map((country) => {newCountries()});
+
+function newCountries(con) {
+    const countryArray = ['fin', 'est', 'sw', 'den', 'nor'];
+    console.log(countryArray);
+
+     return document.getElementById('demo').innerHTML += countryArray;
+}
+//need to figure out how to space them out looks to crowded
 
 
 const rectangle = {
@@ -69,9 +91,13 @@ function myRectangle({width, height, area, perimeter}) {
     return message;
 }
 
+
 // const evens = [0, 2, 4, 6, 8, 10];
-// const [0, 2, 4, 6, 8, 10] = evens;
-//constant typescript errors stating it's not a destructuring pattern
+// const [0, 2, 4. 6, 8, 10] = evens;
+// console.log(evens);
+
+
+//constant typescript errors stating it's not a destructuring pattern won't recognize desctructure pattern
 
 // const odds = [1, 3, 5, 7, 9, 11];
 // const [1, 3, 5, 7, 9, 11] = odds;
