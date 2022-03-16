@@ -33,12 +33,18 @@ const storeEmployee1 = new Employee('John', 'Doe', '01206856', '01001');
 const storeEmployee2= new Employee('Jane', 'Doe', '01216856', '01001');
 console.log(storeEmployee1);
 console.log(storeEmployee2);
+storeEmployee1.getPermissions();
+
 
 class Manager extends Employee {
-    constructor(fName, lName, idNumber, storeNumber, admin) {
-        super(fName, lName, idNumber, storeNumber) 
-        this.abilities = admin;
+    constructor(fName, lName, IdNumber, storeNumber) {
+        super()
+        this.firstName = fName;
+        this.lastName = lName;
+        this.IdNumber = IdNumber;
+        this.storeNumber = storeNumber;
         this.manager = Manager;
+       
     }
     delete () {
         return this.delete;
@@ -93,7 +99,7 @@ function myRectangle({width, height, area, perimeter}) {
 
 
 const evenNums = [,'0', '2', '4', '6', '8', '10'];
-// const [0, 2, 4, 6, 8, 10] = evenNums;         //Not letting me destructure without an error for both
+// const [, 0, 2, 4, 6, 8, 10] = evenNums;         //Not letting me destructure without an error for both
 console.log(evenNums); 
 
 const oddNums = [1, 3, 5, 7, 9];
@@ -111,7 +117,6 @@ numbersArray();
 
 // const newNums = [...evenNums, 1, 3, 5, 7, 9];
 // console.log(newNums);
-
 // document.getElementById('demo').innerHTML += newNums;
 
  addArray = () => {
