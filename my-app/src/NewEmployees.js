@@ -1,3 +1,6 @@
+import React from "react";
+import { render } from "react-dom";
+
 const setPermissions = {
     add: 'true',
     edit: 'true',
@@ -68,6 +71,12 @@ let staffManagers = () => {
 staffMembers();
 staffManagers();
 
+
+// let Finland, Estonia, Sweden, Denmark, Norway;
+
+// [Finland, Estonia, Sweden, Denmark, Norway] = ['fin', 'est', 'sw', 'den', 'nor'];
+// console.log(Finland,Estonia, Sweden, Denmark, Norway);
+
 const countries = ['Finland', 'Estonia', 'Sweden', 'Denmark', 'Norway'];
 const [fin, est, sw, den, nor] = countries;
 console.log(fin);
@@ -81,6 +90,46 @@ const newCountries = () => {
     console.log(Regions);
     return countries;
 }
+
 newCountries();
 
-export default Employee;
+const rectangle = {
+    width: 20,
+    height: 10,
+    area: 200,
+    perimeter: 60
+}
+
+
+let myRectangle = ({width, height, area, perimeter}) => {
+    const rectange1 = 'My rectangle is ' + width + ' width ' + height + ' height ' + area + ' area ' + perimeter + ' perimeter ';
+    console.log(rectange1);
+}
+
+myRectangle(rectangle);
+
+
+let ray = 0;
+console.log(ray);
+
+const evens = [2, 4, 6, 8, 10];
+console.log(evens);
+
+const odds = [1, 3, 5, 7, 9];
+odds.push(ray);
+console.log(odds);
+
+let allTheNumbers = [...odds, ...evens];
+console.log(allTheNumbers);
+
+allTheNumbers.sort((a, b) => {
+    return a - b;
+});
+
+console.log(allTheNumbers)
+
+const NumberElement = (<h1>Numbers In Order : {allTheNumbers}</h1>)
+console.log(NumberElement)
+
+export default NumberElement;
+

@@ -80,7 +80,7 @@
 
 //      return document.getElementById('demo').innerHTML += countryArray;
 // }
-// //need to figure out how to space them out looks to crowded
+//need to figure out how to space them out looks to crowded
 
 
 // const rectangle = {
@@ -99,11 +99,11 @@
 
 
 // const evenNums = [,'0', '2', '4', '6', '8', '10'];
-// // const [, 0, 2, 4, 6, 8, 10] = evenNums;         //Not letting me destructure without an error for both
+// const [, 0, 2, 4, 6, 8, 10] = evenNums;         //Not letting me destructure without an error for both
 // console.log(evenNums); 
 
 // const oddNums = [1, 3, 5, 7, 9];
-// // const [1, 3, 5, 7, 9] = oddsList;
+// const [1, 3, 5, 7, 9] = oddsList;
 // console.log(oddNums);
 
 // numbersArray = () => {
@@ -115,9 +115,9 @@
 
 // numbersArray();
 
-// // const newNums = [...evenNums, 1, 3, 5, 7, 9];
-// // console.log(newNums);
-// // document.getElementById('demo').innerHTML += newNums;
+// const newNums = [...evenNums, 1, 3, 5, 7, 9];
+// console.log(newNums);
+// document.getElementById('demo').innerHTML += newNums;
 
 //  addArray = () => {
 //     let newNumbers = oddNums + evenNums;
