@@ -68,4 +68,19 @@ let staffManagers = () => {
 staffMembers();
 staffManagers();
 
+const countries = ['Finland', 'Estonia', 'Sweden', 'Denmark', 'Norway'];
+const [fin, est, sw, den, nor] = countries;
+console.log(fin);
+console.log(est);
+console.log(sw);
+console.log(den);
+console.log(nor);
+
+const newCountries = () => {
+    const Regions = countries.map((arr) => { return ['fin', 'est', 'sw', 'den', 'nor']});
+    console.log(Regions);
+    return countries;
+}
+newCountries();
+
 export default Employee;
